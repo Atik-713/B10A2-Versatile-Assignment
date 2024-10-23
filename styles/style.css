@@ -391,6 +391,7 @@ select {
 .footer {
   background: #222;
   padding-top: 66px;
+  padding-bottom: 35px;
 }
 .footer-container {
   max-width: 80%;
@@ -398,7 +399,7 @@ select {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  border: 1px solid red;
+  align-items: center;
 }
 .fitness {
   max-width: 443px;
@@ -426,6 +427,28 @@ select {
   font-size: 1.5rem;
   line-height: 120%; /* 27.6px */
   margin-bottom: 20px;
+}
+hr {
+  stroke-width: 2px;
+  margin-bottom: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 80%;
+  margin: auto;
+  margin-top: 79px;
+}
+.line {
+}
+.footer small {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.1rem;
+  line-height: 120%; /* 120% */
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+.footer p.copyright {
+  margin: 0 auto;
+  margin-top:35px ;
+  text-align: center;
 }
 
 /* Responsive Styles Part------------------------------------------------------------------------ */
@@ -502,9 +525,17 @@ select {
     grid-template-columns: 1fr;
     justify-items: center;
   }
+
+  /* Footer Part Responsive--------------- */
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .get {
+    margin-top: 30px;
+  }
 }
 
-/* Large Device----- */
+/* Large Device---------------------------------------------------------- */
 @media screen and (min-width: 992px) {
   #bar {
     display: none;
