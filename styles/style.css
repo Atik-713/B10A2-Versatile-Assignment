@@ -386,6 +386,39 @@ select {
   height: 272px;
   border-radius: 18px;
 }
+/* Facilities Section Styles Part----------------------------- */
+.facilities {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 88px;
+  padding-bottom: 88px;
+}
+.facilities-text {
+  max-width: 671px;
+  text-align: center;
+  margin: 0 auto;
+}
+.facilities-text .description {
+  text-align: center;
+}
+.facilities-img-container {
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1060px;
+  padding: 20px;
+}
+.facilities-img-container img {
+  width: 100%;
+}
+.facilities-img img {
+  height: 272px;
+  border-radius: 18px;
+}
 
 /* Footer Styles Part Here------------------------ */
 .footer {
