@@ -405,7 +405,7 @@ select {
   margin: 0 auto;
   margin-top: 50px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(168, 223, 42, 0.1);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
