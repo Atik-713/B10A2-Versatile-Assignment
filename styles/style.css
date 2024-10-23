@@ -204,6 +204,7 @@ header {
 .change-img-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
   max-width: 80%;
   margin: 0 auto;
 }
@@ -223,9 +224,214 @@ header {
   margin-bottom: 5px;
 }
 
-/* Responsive Styles Part---------------------------------- */
-/* Header part responsive */
+/* Run SEction Style part------------------ */
+.run {
+  display: flex;
+  /* flex: 1; */
+  justify-content: space-between;
+  padding: 30px;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius: 18px;
+  background: #222;
+}
+.run-text {
+  max-width: 445px;
+  text-align: center;
+}
+.run-text .section-title,
+.description {
+  text-align: left;
+}
+.run-text .description {
+  margin-bottom: 30px;
+}
+.run-img {
+  max-width: 445px;
+}
+.run-img img {
+  width: 100%;
+  border-radius: 18px;
+}
+
+/* BMI Section Style Part------------- */
+.bmi {
+  /* display: flex; */
+  margin-top: 100px;
+}
+.bmi-text {
+  max-width: 670px;
+  margin: 0 auto;
+}
+.bmi .section-title {
+  text-align: left;
+}
+.bmi .description {
+  margin-bottom: 80px;
+}
+.bmi-form-container {
+  background: #222;
+  padding: 50px 0;
+}
+.bmi-form {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.bmi-sub-title {
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 120%; /* 33.6px */
+}
+.bmi-chart table {
+  border-collapse: collapse;
+}
+table {
+  margin-top: 50px;
+}
+table th {
+  color: #fff;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+}
+table th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+table td {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 13px;
+  font-size: 1rem;
+  line-height: 120%; /* 16.8px */
+}
+.bmi-cal {
+  max-width: 577px;
+}
+.bmi-cal .description {
+  margin-bottom: 34px;
+}
+.bmi-cal-input {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+}
+input {
+  padding: 12px 40px 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 1rem;
+  line-height: 137%; /* 137.5% */
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+select {
+  padding: 12px 20px;
+  border-radius: 8px;
+  width: 265px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  line-height: 137%; /* 137.5% */
+}
+.activity {
+  max-width: 550px;
+}
+.bmi-cal .join-btn {
+  margin-top: 15px;
+}
+
+/* Meet Section Styles Part----------------------------- */
+.meet {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 88px;
+  padding-bottom: 88px;
+}
+.meet-text {
+  max-width: 671px;
+  text-align: center;
+  margin: 0 auto;
+}
+.meet-text .description {
+  text-align: center;
+}
+.meet-img-container {
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1060px;
+  padding: 20px;
+}
+.meet-img-container img {
+  width: 100%;
+}
+.meet-img img {
+  height: 272px;
+  border-radius: 18px;
+}
+
+/* Footer Styles Part Here------------------------ */
+.footer {
+  background: #222;
+  padding-top: 66px;
+}
+.footer-container {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  border: 1px solid red;
+}
+.fitness {
+  max-width: 443px;
+}
+.fitness-title {
+  color: #e6533c;
+  font-size: 4.25rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 120%; /* 84px */
+}
+.get-title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+  margin-bottom: 40px;
+}
+.get a {
+  text-decoration: none;
+}
+.get li {
+  list-style: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  line-height: 120%; /* 27.6px */
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles Part------------------------------------------------------------------------ */
+/* Small Device------------ */
 @media screen and (max-width: 576px) {
+  /* Header part responsive */
   .nav-list,
   .banner {
     flex-direction: column;
@@ -244,6 +450,9 @@ header {
     bottom: 550px;
     left: 190px;
   }
+  .banner .join-btn {
+    margin-bottom: 10px;
+  }
 
   #bar .child-bar {
     width: 50px;
@@ -258,8 +467,44 @@ header {
     grid-template-columns: 1fr;
     justify-items: center;
   }
+  .change .description {
+    padding: 30px;
+  }
+
+  /* Run Part Responsive---- */
+  .run {
+    flex-direction: column;
+  }
+  .run .join-btn {
+    margin-bottom: 30px;
+  }
+
+  /* BMI Part Responsive */
+  .bmi-text {
+    padding: 20px;
+  }
+  .bmi-form {
+    flex-direction: column;
+  }
+  .bmi-cal {
+    margin-top: 40px;
+    /* padding: 10px; */
+  }
+  input {
+    display: block;
+    /* margin: 0; */
+  }
+  select {
+    margin-bottom: 12px;
+  }
+  /* Meet Section Responsive-------------- */
+  .meet-img-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 
+/* Large Device----- */
 @media screen and (min-width: 992px) {
   #bar {
     display: none;
