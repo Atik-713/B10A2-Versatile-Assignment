@@ -318,9 +318,7 @@ table td {
 .bmi-cal-input {
   color: rgba(255, 255, 255, 0.6);
   font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
+  font-size: 1rem;
   line-height: 22px; /* 137.5% */
 }
 input {
@@ -347,7 +345,7 @@ select {
   line-height: 137%; /* 137.5% */
 }
 .activity {
-  max-width: 550px;
+  width: 95%;
 }
 .bmi-cal .join-btn {
   margin-top: 15px;
@@ -552,6 +550,9 @@ hr {
   }
   select {
     margin-bottom: 12px;
+  }
+  .activity {
+    width: 88%;
   }
   /* Meet Section Responsive-------------- */
   .meet-img-container {
