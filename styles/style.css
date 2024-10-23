@@ -117,8 +117,9 @@ body {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   max-width: 200px;
-  /* margin-left: 200px; */
-  border: 1px solid red;
+  position: relative;
+  bottom: 450px;
+  left: 225px;
 }
 .badge-title {
   color: #fff;
@@ -130,9 +131,37 @@ body {
 }
 .badge-text {
   color: rgba(255, 255, 255, 0.65);
-  font-size: 1rem ;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 153.846% */
+  line-height: 153%; /* 153.846% */
   letter-spacing: 1px;
+}
+.icon-badge {
+  padding: 20px 23px;
+  border-radius: 12px;
+  max-width: 200px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(48, 48, 48, 0.54);
+  backdrop-filter: blur(10px);
+  position: relative;
+  bottom: 250px;
+  right: 150px;
+}
+.icon-title {
+  color: var(--Text-1, #fafaf9);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 100%; /* 100% */
+  letter-spacing: 0.3px;
+}
+.icon-text {
+  color: var(--Text-2, rgba(239, 237, 232, 0.65));
+  font-size: 1rem;
+  line-height: 150%; /* 150% */
+  letter-spacing: 0.5px;
 }
