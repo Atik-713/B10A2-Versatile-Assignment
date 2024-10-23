@@ -559,6 +559,12 @@ hr {
     justify-items: center;
   }
 
+  /* Facilities Section Responsive-------- */
+  .facilities-img-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
   /* Footer Part Responsive--------------- */
   .footer-container {
     grid-template-columns: 1fr;
